@@ -1,3 +1,7 @@
+import { createGlobalStyle } from 'styled-components';
+
+export default createGlobalStyle`
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +11,11 @@
 
 html, body, #root, #root>.app {
   height: 100%;
+
+  
+
+}
+
 }
 
 body {
@@ -21,3 +30,5 @@ body {
 a {
   text-decoration: none;
 }
+
+`;

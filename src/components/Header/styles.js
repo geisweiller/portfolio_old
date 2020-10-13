@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const HeaderWrapper = styled.div` 
 
@@ -15,12 +15,33 @@ export const HeaderWrapper = styled.div`
     display: flex;
     align-items: center;
     width: auto;
+   
+  }
+  
+  nav.nav-logo {
+
+    //for mobiles 
+    @media(max-width: 600px) {
+      
+      img {
+        width: 80px;
+      }
+      
+    }
   }
 
   a {
     font-weight: bold;
     padding: 0 60px 0 0;
     color: #707070;
+
+    //for mobiles
+    @media(max-width:600px) {
+    
+      font-size: 10px;
+      padding: 8px;
+      text-align: center;
+    } 
   }
   
   button {
@@ -34,26 +55,5 @@ export const HeaderWrapper = styled.div`
     display:none;
   }
 
-  @media(max-width:653px) {
-    
-    width: 100vh;
-
-    /* nav.nav-links {
-      display: none;
-    }
-
-    aside{
-      display:flex;
-    }
-    button {
-      display: flex;
-      font-size: large;
-      margin-right: 20px;
-    }
-  } */
-`; 
  
-
-
-
-
+`;

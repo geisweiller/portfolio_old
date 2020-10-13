@@ -17,7 +17,9 @@ const Contact = () => (
         </span>
         <span>
           <img src={WhatsLogo} alt="Telefone" width="60px" />
-          <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5571999080236&text=Ola!%20Gostaria%20de%20falar%20com%20voc%C3%AA!">Fale comigo pelo Whatsapp!</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5571999080236&text=Ola!%20Gostaria%20de%20falar%20com%20voc%C3%AA!">
+            Clique aqui e fale comigo pelo Whatsapp!
+          </a>
         </span>
         <span>
           <img src={MailLogo} alt="Telefone" width="60px" />
@@ -27,7 +29,7 @@ const Contact = () => (
     </LeftContainer>
     <RightContainer>
       <div>
-        <span>
+        <span className="id">
           <input type="text" placeholder="Nome" />
           <input type="text" placeholder="Sobrenome" />
         </span>

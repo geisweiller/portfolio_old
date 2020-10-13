@@ -7,24 +7,36 @@ export const FooterWrapper = styled.div`
   background: #F5F5F5;
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   border-top: 1px solid #707070;
   justify-content: space-between;
-  /* position: absolute; */
+  
+
 
   p {
     padding-left:20px;
     font-size: 10px;
+
+    //for ipads
+    @media(max-width: 768px){
+      font-size: 5px;
+      text-align: center;
+    }
   }
 
   a {
     padding: 0 80px 0 80px;
     color: #707070;
+
+    //for mobiles
+    @media(max-width:600px) {
+        
+      font-size: 10px;
+      padding: 8px;
+      text-align: center;
+    } 
   }
 
-  @media(max-width:653px) {
-      width: 100vh;
-    
-  }
+  
 `;

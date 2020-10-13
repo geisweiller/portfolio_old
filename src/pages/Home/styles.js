@@ -9,7 +9,14 @@ export const Wrapper = styled.div`
   bottom:40px;
 `;
 
-export const WelcomeText = styled.span``;
+export const WelcomeText = styled.span`
+   //for mobiles 
+   @media(max-width: 600px){
+
+  
+    text-align: center;
+  }
+`;
 
 export const TextContainer = styled.div`
   display: flex;
@@ -24,21 +31,21 @@ export const TextContainer = styled.div`
     font-size:40px;
   }
 
-  @media(max-width: 1050px){
+  //for ipads
+  @media(max-width: 768px){
 
     width:100%;
     align-items: center;
     justify-content: center;
+    
+    
 
-    span {
-
-      padding-left: 75px;
-
+    p {
+      text-align: center;
     }
-
-
   }
-  
+
+
 `;
 
 export const ImageContainer = styled.div`
@@ -60,8 +67,8 @@ export const ImageContainer = styled.div`
     max-width: 100%;
 
   }
-
-  @media(max-width: 1050px) {
+  //for ipads
+  @media(max-width: 768px) {
   
     display: none;
     width: 0;

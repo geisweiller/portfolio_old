@@ -1,13 +1,14 @@
 import React from 'react';
 import Routes from './routes';
 
-import './styles/global.css';
+import GlobalStyle from './styles/global';
 
 import Footer from './components/Footer';
 
 const App = () => (
 
   <div className="app">
+    <GlobalStyle />
     <Routes />
     <Footer />
   </div>

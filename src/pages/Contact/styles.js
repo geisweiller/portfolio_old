@@ -22,7 +22,16 @@ export const RightContainer = styled.div`
   width: 50%;
   height: auto;
   top:0;
-  padding: 40px;
+  padding: 40px; 
+
+  //for mobiles
+  @media(max-width: 600px) {
+      
+      top: 50%;
+      width: 100%;
+      height: 50%;
+      display: none;
+    }
 
   div {
 
@@ -42,7 +51,15 @@ export const RightContainer = styled.div`
 
   input {
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
+    width: 50%;
+
+    @media(max-width: 768px) {
+      
+      width: 120px;
+
+  
+      }
   }
 
   input::placeholder {
@@ -64,6 +81,13 @@ export const RightContainer = styled.div`
       bottom: 100px;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
       margin-top: 20px;
+
+      @media(max-width: 768px) {
+      
+      margin-top: 0px;
+      bottom: 200px;
+  
+      }
     }
     
     button:hover{
@@ -72,15 +96,21 @@ export const RightContainer = styled.div`
 
     textarea {
       resize:none;
-      width: 380px;
+      width: 400px;
       height: 200px;
       font-family: "Roboto", sans-serif;
+      padding: 20px;
+
+      @media(max-width: 768px) {
+      
+      width: 280px;
+  
+      }
     }
 
     textarea::placeholder {
       color:black;
       opacity: 0.3;
-      padding: 10px;
       font-size:14px;
     }
   }
@@ -98,9 +128,41 @@ export const LeftContainer = styled.div`
   justify-content: center;
   align-items: center;
 
+   //for mobiles
+   @media(max-width: 600px) {
+      
+    
+      width: 100%;
+      height: 100%;
+      top: 0;
+      padding: 0;
+    }
+
+
   strong {
     font-size: 40px;
     margin: 60px;
+
+    //for ipads
+    @media(max-width: 768px) {
+      
+      margin: 0;
+      text-align: center;
+      position: absolute;
+      top: 40px;
+      left: 200px;
+      width: 100%;
+      }
+
+    //for mobiles
+    @media(max-width: 600px) {
+      
+      position: absolute;
+      font-size: 30px;
+      left: 0;
+    
+
+    }
   }
 
   div {
@@ -109,6 +171,15 @@ export const LeftContainer = styled.div`
     flex-direction: column;
     align-items: flex-start;
     margin: 80px;
+
+     //for mobiles
+     @media(max-width: 600px) {
+      
+      margin: 20px 0 0 0;
+      padding: 40px;
+
+
+    }
   }
 
   span {
@@ -123,6 +194,11 @@ export const LeftContainer = styled.div`
     align-items: center;
     justify-content: center;
     padding: 10px;
+
+    @media(max-width: 768px) {
+      
+      text-align: left;
+     }
   }
 
   a:hover, a:active {
@@ -130,5 +206,13 @@ export const LeftContainer = styled.div`
     text-decoration-color: black;
     transition: 0.3s;
     border-radius: 10px;
+    
+  }
+
+  p {
+    @media(max-width: 768px) {
+      
+      padding-left: 15px;
+     }
   }
 `;

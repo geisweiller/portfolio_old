@@ -7,6 +7,12 @@ export const Wrapper = styled.div`
   position: absolute;
   top: 64px;
   bottom:40px;
+  
+  @media(max-width: 600px) {
+      
+      height: 100%;
+    }
+
 
 `;
 
@@ -21,13 +27,36 @@ export const UpperContainer = styled.div`
   width: 100%;
   justify-content: space-between;
 
+  @media(max-width: 600px) {
+      
+      align-items: center;
+      position: relative;
+      top: 20px;
+      width: 100%;
+
+    }
+
+
   span {
     display:flex;
     width:50%;
     display:flex;
     align-items: flex-end;
     justify-content: center;
+
+      @media(max-width: 600px) {
+      
+      align-items: center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+ 
   }
+
+    
+  
+  
 
   button {
     background: #393636;
@@ -39,6 +68,14 @@ export const UpperContainer = styled.div`
     position:absolute;
     bottom: 100px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+
+    //for mobiles
+    @media(max-width: 600px) {
+      
+     display: none;
+    
+    }
+    
   }
 
   button:hover{
@@ -50,10 +87,26 @@ export const UpperContainer = styled.div`
     display: flex;
     position: absolute;
     top: 100px;
+
+    //for mobiles
+    @media(max-width: 600px) {
+      
+      position: relative;
+      top: 20px;
+      font-size: 30px;
+    
+    }
   }
 
   p {
     padding: 50px;
+
+    @media(max-width: 600px) {
+      
+      padding: 100px 50px;
+      font-size: 15px;
+      
+    }
   }
 
 `;
@@ -69,23 +122,63 @@ export const LowerContainer = styled.div`
   width: 100%;
   justify-content: center;
 
+  @media(max-width: 600px) {
+      
+    
+
+    }
+
   span {
     display:flex;
     width:50%;
     display:flex;
     align-items: flex-end;
     justify-content: center;
+
+     //for mobiles
+     @media(max-width: 600px) {
+      
+      align-items: center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
   }
 
+  
 
   strong {
     font-size:60px;
     display: flex;
     position: absolute;
     bottom: 150px;
+    
+    //for ipads
+    @media(max-width: 768px){
+      margin-right:30px;
+    }
+
+    //for mobiles
+    @media(max-width: 600px) {
+      
+      margin: 0;
+      position: relative;
+      font-size: 30px;
+      bottom: 0;
+      padding-top: 50px;
+    }
   }
 
   p {
     padding: 50px;
+
+    //for mobiles
+    @media(max-width: 600px) {
+      
+      font-size: 15px;
+      padding: 150px 50px;
+    }
+    
+
   }
 `;
