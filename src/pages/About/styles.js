@@ -68,6 +68,8 @@ export const UpperContainer = styled.div`
     position:absolute;
     bottom: 100px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  
+
 
     //for mobiles
     @media(max-width: 600px) {
@@ -100,6 +102,7 @@ export const UpperContainer = styled.div`
 
   p {
     padding: 50px;
+    text-align: justify;
 
     @media(max-width: 600px) {
       
@@ -171,7 +174,8 @@ export const LowerContainer = styled.div`
 
   p {
     padding: 50px;
-
+    text-align: justify;
+    
     //for mobiles
     @media(max-width: 600px) {
       

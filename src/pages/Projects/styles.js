@@ -5,71 +5,46 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 64px;
   bottom:40px;
+  height: 100%;
+  
 
   //for mobiles
   @media(max-width: 600px) {
-      
-      position: relative;
+
       height: 100%;
-      margin-bottom: 60px;
-    }
-
-`;
-
-export const ColumnLeft = styled.div`
-
-  justify-content: space-between;
-  width: 50%;
-  left: 0;
-  height:100%;
-  padding: 20px;
-
-  //for mobiles
-  @media(max-width: 600px) {
-      
-      top:0;
-      height: 50%;
-      position: absolute;
-      width: 100%;
 
     }
 
 `;
 
-export const ColumnRight = styled.div`
+export const ProjectsContainer = styled.div`
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px 0 40px 0;
+    
 
   
-  width: 50%;
-  right: 0;
-  height:100%;
-  padding: 20px;
-
-  //for mobiles
-  @media(max-width: 600px) {
-      
-      position: absolute;
-      height:50%;
-      bottom:0;
-      width: 100%;
-      padding: 10px 20px 20px;
-    }
-
+   
 `;
 
 export const Project = styled.div`
 
   display: flex;
   border: 1px solid #707070;
-  height: 30%;
-  width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   transition: 0.3s;
-  margin-bottom: 20px;
+  margin: 20px 0;
+  padding: 20px;
   flex-direction: column;
-  
+  width: 100%;
 
    //for mobiles
   @media(max-width: 600px) {
@@ -77,14 +52,12 @@ export const Project = styled.div`
       margin: 20px 0;
   }
 
-  :hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7)
-  }
+ 
 
   strong {
-    padding: 30px 20px;
+    padding: 10px 20px;
     font-size: 20px;
-    height: 20%;
+
 
     //for ipads
     @media(max-width: 768px) {
@@ -101,7 +74,8 @@ export const Project = styled.div`
 
   p {
     
-    padding: 40px 0 0 20px ;
+    
+    padding: 40px 0 40px 20px ;
 
     //for ipads
     @media(max-width: 768px) {
@@ -120,4 +94,48 @@ export const Project = styled.div`
 
   }
 
+
+  a {
+
+    padding: 10px;
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    width: 100%;
+    border-radius: 10px;
+    background: #393636;
+    color: #FFF;
+
+
+      //for mobiles
+      @media(max-width: 600px) {
+        
+        font-size: 10px;
+        padding: 0;
+        width: 100%;
+      }
+
+      //for ipads
+      @media(max-width: 768px) {
+
+        font-size: 10px;
+        padding: 0;
+        width: 100%;
+      }
+
+  }
+
+  a:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7)
+
+  } 
+
+  a:visited {
+    color: #FFF;
+  }
+
+
+
+  
 `;

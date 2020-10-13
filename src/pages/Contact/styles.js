@@ -206,6 +206,10 @@ export const LeftContainer = styled.div`
     text-decoration-color: black;
     transition: 0.3s;
     border-radius: 10px;
+
+  a:visited {
+    color: #363636;
+  }
     
   }
 
