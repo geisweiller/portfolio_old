@@ -12,11 +12,9 @@ export default createGlobalStyle`
 html, body, #root, #root>.app {
   height: 100%;
 
-  
 
 }
 
-}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -29,6 +27,11 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 `;

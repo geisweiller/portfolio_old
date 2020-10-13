@@ -10,7 +10,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
 const Routes = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Header />
     <Switch>
       <Route exact path="/" component={Home} />
