@@ -1,8 +1,8 @@
 {
-  "name": "huntweb",
+  "name": "porfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://geisweiller.githubio/portfolio",
+  "homepage": "http://geisweiller.github.io/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
