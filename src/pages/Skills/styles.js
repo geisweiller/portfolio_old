@@ -8,11 +8,14 @@ export const Wrapper = styled.div`
   position: absolute;
   top: 64px;
   bottom:40px;
+  align-items: center;
 
-  //for mobiles
-  @media(max-width: 600px) {
-      
+  //for ipads
+  @media(max-width: 768px) {
+
     position: relative;
+    height: 100%;
+
   }
   
 `;
@@ -22,16 +25,25 @@ export const TechContainer = styled.div`
   display: flex;
   height: 100%;
   width: 100%;
-  padding: 50px 100px;
   justify-content: space-between;
   align-items: center;
+  padding: 0 60px;
+  position: absolute;
 
   //for ipads
   @media(max-width: 768px) {
       
-      flex-direction: column;
+    flex-direction: column;
       
-    }
+  }
+
+  //for mobiles
+  @media(max-width: 600px) {
+  
+    padding: 20px;
+
+  }
+  
   
   
 `;
@@ -42,18 +54,27 @@ export const Tech = styled.div`
   justify-content: center;
   align-items: center;
   border: 1px solid #707070;
-  height: 50%;
+  height: 60%;
   width: 20%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   transition: 0.3s;
   flex-direction: column;
   
+  
   //for ipads  
   @media(max-width: 768px) {
       
-    margin: 0 0 20px 0;
+    margin: 30px 0 50px 0;
     width: 100%;
     height: 30%;
+
+  }
+
+  //for mobiles
+  @media(max-width: 600px) {
+  
+    margin: 0px 0 50px 0;
+    height: 40%;
 
   }
 
@@ -62,38 +83,60 @@ export const Tech = styled.div`
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7)
   }
 
-  img {
+  
+  div {
+
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+
     //for ipads
     @media(max-width: 768px) {
-      
-      margin: 0 0 10px 0;
+
+      padding: 10px;
+
+    }
+
   
+   
+
+    img {
+     
+      padding-top: 20px;
+
+      //for ipads
+      @media(max-width: 768px) {
+
+        margin: 20px 0 10px 0;
+
       }
 
-    //for mobiles
-    @media(max-width: 600px) {
-      
-      width: 60px;
-      margin: 0;
-      margin-top: 15px;
+      //for mobiles
+      @media(max-width: 600px) {
+
+        width: 60px;
+        margin: 0;
+        margin-top: 15px;
+      }
     }
-    
   }
 
   strong {
-    padding-top: 20px;
-
+    padding: 20px;
+    font-size: 20px;
     //for ipads
     @media(max-width: 768px) {
       
-      padding-top: 0;
+      padding-top: 5px;
   
     }
 
     //for mobiles
     @media(max-width: 600px) {
       
-     padding-top: 0;
+     padding-top: 5px;
     }
 
   }
@@ -101,14 +144,17 @@ export const Tech = styled.div`
 
   p {
 
-    text-align: center;
+    text-align: justify;
     padding: 20px;
-
+    height: 100%;
+    font-size: 15px;
     //for mobiles
     @media(max-width: 600px) {
 
       font-size: 10px;
-      padding-top: 5px
+      padding-top: 5px;
+      
+      
      }
 
   }

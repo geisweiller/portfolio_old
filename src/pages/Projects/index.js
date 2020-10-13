@@ -1,43 +1,46 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+import api from '../../services/api';
 
 import {
-  Wrapper, Project, ColumnLeft, ColumnRight,
+  Wrapper, Project, ProjectsContainer,
 } from './styles';
 
-const Projects = () => (
-  <Wrapper>
+export default class Projects extends Component {
+  constructor() {
+    super();
+    this.state = {
+      repositories: [],
+    };
+  }
 
-    <ColumnLeft>
-      <Project>
-        <strong>Sereia-Tattoo-Web-front-backend</strong>
-        <p>Loja virtual utilizando ReactJs + Redux + Saga</p>
-      </Project>
-      <Project>
-        <strong>Repositório</strong>
-        <p>Loja virtual utilizando ReactJs + Redux + Saga</p>
-      </Project>
-      <Project>
-        <strong>Repositório</strong>
-        <p>Loja virtual utilizando ReactJs + Redux + Saga</p>
-      </Project>
-    </ColumnLeft>
-    <ColumnRight>
-      <Project>
-        <strong>Repositório</strong>
-        <p>Loja virtual utilizando ReactJs + Redux + Saga</p>
-      </Project>
-      <Project>
-        <strong>Repositório</strong>
-        <p>Loja virtual utilizando ReactJs + Redux + Saga</p>
-      </Project>
-      <Project>
-        <strong>Repositório</strong>
-        <p>Loja virtual utilizando ReactJs + Redux + Saga</p>
-      </Project>
-    </ColumnRight>
+  componentDidMount() {
+    this.loadRepos();
+  }
 
-  </Wrapper>
+  loadRepos = async () => {
+    const response = await api.get('/users/geisweiller/repos');
 
-);
+    this.setState({ repositories: response.data });
+  }
 
-export default Projects;
+  render() {
+    const { repositories } = this.state;
+
+    return (
+
+      <Wrapper>
+        <ProjectsContainer>
+          {repositories.map((repository) => (
+            <Project>
+              <strong>{repository.name}</strong>
+              <p>{repository.description}</p>
+              <a href={repository.html_url}>Acesse o repositório</a>
+            </Project>
+          ))}
+        </ProjectsContainer>
+      </Wrapper>
+
+    );
+  }
+}
