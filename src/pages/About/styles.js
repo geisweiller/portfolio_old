@@ -50,39 +50,39 @@ export const UpperContainer = styled.div`
       position: absolute;
       top: 0;
       width: 100%;
+      flex-direction: column;
     }
  
-  }
 
-    
-  
-  
+    a {
+      color: #FFF;
+      background: #393636;
+      font-weight: bold;
+      padding: 20px;
+      border-radius: 10px;
+      border: 0;
+      bottom: 100px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+      margin-top: 60px;
 
-  button {
-    background: #393636;
-    color: #FFF;
-    font-weight: bold;
-    padding: 20px;
-    border-radius: 10px;
-    border: 0;
-    position:absolute;
-    bottom: 100px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-  
+      :hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7)
+      }
 
-
-    //for mobiles
-    @media(max-width: 600px) {
+      @media(max-width: 600px) {
       
-     display: none;
-    
+       margin-top: 320px;
+       padding: 10px;
+       display: flex;
+       font-size: 10px;
+       align-items: center;
+       font-weight: normal;
+      }
     }
-    
   }
 
-  button:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7)
-  }
+    
+  
 
   strong {
     font-size:60px;

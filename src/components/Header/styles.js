@@ -10,6 +10,8 @@ export const HeaderWrapper = styled.div`
   align-items: center;
   box-shadow: 2px 4px 10px;
   position: absolute;
+  top: 0;
+
 
   nav {
     display: flex;

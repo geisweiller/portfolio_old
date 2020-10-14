@@ -1,7 +1,17 @@
-import styled from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 
-export const Wrapper = styled.div`  
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+`;
 
+export const Wrapper = styled.div.attrs((props) => ({
+  disabled: props.loading,
+}))` 
   display: flex;
   justify-content: center;
   width: 100%;
@@ -9,7 +19,18 @@ export const Wrapper = styled.div`
   top: 64px;
   bottom:40px;
   height: 100%;
-  
+  align-items: center;
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  ${(props) => props.loading
+    && css`
+      svg {
+        animation: ${rotate} 2s linear infinite;
+      }
+      `}
 
   //for mobiles
   @media(max-width: 600px) {
@@ -25,14 +46,10 @@ export const ProjectsContainer = styled.div`
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     width: 50%;
     padding: 20px 0 40px 0;
-    
-
-  
-   
+    top: 5px;
 `;
 
 export const Project = styled.div`
@@ -97,6 +114,7 @@ export const Project = styled.div`
 
   a {
 
+    display: flex;
     padding: 10px;
     margin: 20px 0;
     font-weight: bold;
@@ -106,6 +124,8 @@ export const Project = styled.div`
     border-radius: 10px;
     background: #393636;
     color: #FFF;
+    justify-content: center;
+    align-items: center;
 
 
       //for mobiles
@@ -119,6 +139,7 @@ export const Project = styled.div`
       //for ipads
       @media(max-width: 768px) {
 
+        height: 40px;
         font-size: 10px;
         padding: 0;
         width: 100%;
