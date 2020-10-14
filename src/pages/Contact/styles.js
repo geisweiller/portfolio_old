@@ -249,11 +249,11 @@ export const LeftContainer = styled.div` //UpperContainer in mobile
     text-decoration-color: black;
     transition: 0.3s;
     border-radius: 10px;
+    
+  }
 
   a:visited {
     color: #363636;
-  }
-    
   }
 
   p {
