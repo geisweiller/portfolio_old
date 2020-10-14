@@ -26,12 +26,21 @@ export const RightContainer = styled.div` //Lower Container in mobile
   padding: 40px; 
 
 
-  //for mobiles
-  @media(max-width: 600px) {
+    //for mobiles
+    @media(max-width: 600px) {
       
       top: 50%;
       width: 100%;
       height: 50%;
+      background: #FFF;
+     
+    }
+
+    //for mobiles 360px
+    @media(max-width: 360px) {
+      
+      
+      height: 60%;
       background: #FFF;
      
     }
@@ -125,14 +134,14 @@ export const RightContainer = styled.div` //Lower Container in mobile
       //for mobiles
       @media(max-width: 600px) {
         
-        padding: 10px;
-        bottom: 15px;
+        padding: 8px;
+        bottom: 25px;
       }
 
       //for mobile 360px
       @media(max-width: 360px) {
       
-        bottom: 0px;
+        bottom: 20px;
       }
 
     }
@@ -218,7 +227,12 @@ export const LeftContainer = styled.div` //UpperContainer in mobile
       font-size: 30px;
       left: 0;
       top: 30px;
+    }
 
+    //for mobiles 360px
+    @media(max-width: 600px) {
+      
+      font-size: 20px;
     }
   }
 
@@ -230,13 +244,17 @@ export const LeftContainer = styled.div` //UpperContainer in mobile
     margin: 80px;
     
 
-     //for mobiles
-     @media(max-width: 600px) {
+    //for mobiles
+    @media(max-width: 600px) {
       
       margin: 80px 0 0 0;
       padding: 40px;
+    }
 
-
+    //for mobiles
+    @media(max-width: 600px) {
+      
+      margin: 60px 0 0 0;
     }
   }
 
