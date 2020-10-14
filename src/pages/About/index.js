@@ -8,7 +8,7 @@ const About = () => (
     <UpperContainer>
       <span className="title-about">
         <strong>SOBRE MIM</strong>
-        <button type="button">Baixe meu CV</button>
+        <a href="https://drive.google.com/uc?export=download&id=1et02y71sWvNlofGHYrUT0Y_7EPVfBluB">Baixe meu CV</a>
       </span>
       <span className="about">
         <p>
