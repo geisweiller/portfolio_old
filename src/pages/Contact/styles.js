@@ -24,7 +24,7 @@ export const RightContainer = styled.div` //Lower Container in mobile
   height: auto;
   top:0;
   padding: 40px; 
-
+  
 
     //for mobiles
     @media(max-width: 600px) {
@@ -42,7 +42,7 @@ export const RightContainer = styled.div` //Lower Container in mobile
       
       height: 60%;
       background: #FFF;
-     
+ 
     }
 
 
@@ -64,7 +64,8 @@ export const RightContainer = styled.div` //Lower Container in mobile
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+
+   
   }
 
   span {
@@ -95,6 +96,14 @@ export const RightContainer = styled.div` //Lower Container in mobile
         margin: 5px;
 
     }
+
+     //for mobiles 360px
+    @media(max-width: 360px) {
+        
+      padding: 5px;
+      margin: 3px;
+    }
+    
   }
 
   input::placeholder {
@@ -141,7 +150,7 @@ export const RightContainer = styled.div` //Lower Container in mobile
       //for mobile 360px
       @media(max-width: 360px) {
       
-        bottom: 20px;
+        bottom: 60px;
       }
 
     }
@@ -170,6 +179,14 @@ export const RightContainer = styled.div` //Lower Container in mobile
         
         width: 250px;
         height: 150px;
+
+      }
+
+      //for mobiles 360px
+      @media(max-width: 360px) {
+        
+        width: 240px;
+        height: 140px;
 
       }
     }
