@@ -22,9 +22,12 @@ const About = () => (
     <LowerContainer>
       <span className="experience">
         <p>
-          Já trabalhei na construtora Odebrecht como estagiário de Engenharia Ambiental. Tal experiência me permitiu
-          aprender sobre o meio empresarial bem como planejar projetos, lidar com prazos, liderar e ser liderado. Também estagiei na empresa BRISA,
-          na área de testes de softwares embarcados, onde era preciso apresentar resultados de qualidade e em um curto espaço
+          Estagiário de Engenharia Ambiental - Construtora Odebrecht. Tal experiência me permitiu
+          aprender sobre o meio empresarial bem como planejar projetos, lidar com prazos, liderar e ser liderado.
+          <br />
+          <br />
+          Estágiario de Testes de Software - BRISA.
+          Trabalhei em um ambiente onde era preciso apresentar resultados de qualidade e em um curto espaço
           de tempo, pois a entrega dos projetos eram diárias. Ambas as experiências me permitiram aprender à trabalhar em sinergia com
           equipes no âmbito de resolução de problemas da melhor forma possível.
         </p>

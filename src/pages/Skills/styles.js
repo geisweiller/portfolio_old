@@ -128,7 +128,7 @@ export const Tech = styled.div`
     font-size: 20px;
 
     //for notebooks
-    @media(max-width: 1360px) {
+    @media(max-width: 1366px) {
       
       font-size: 16px;
   
