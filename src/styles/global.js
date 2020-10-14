@@ -11,8 +11,7 @@ export default createGlobalStyle`
 
 html, body, #root, #root>.app {
   height: 100%;
-
-
+  
 }
 
 
