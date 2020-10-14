@@ -4,10 +4,6 @@ export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
-  @font-face {
-    font-family: Quub;
-    src: url('../assets/fonts/QUUB Regular.ttf')  format('ttf');
-}
 
 * {
   margin: 0;
@@ -31,7 +27,7 @@ body {
   -webkit-font-smoothing: antialiased;
 
   strong#name {
-    font-family: 'Quub', sans-serif
+    font-family: 'Audiowide', sans-serif
   }
 }
 
