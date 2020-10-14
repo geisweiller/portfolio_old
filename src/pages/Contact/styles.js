@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   
 `;
 
-export const RightContainer = styled.div`
+export const RightContainer = styled.div` //Lower Container in mobile
 
   display: flex;
   justify-content: center;
@@ -32,7 +32,8 @@ export const RightContainer = styled.div`
       top: 50%;
       width: 100%;
       height: 50%;
-
+      background: #FFF;
+     
     }
 
 
@@ -136,7 +137,8 @@ export const RightContainer = styled.div`
       @media(max-width: 768px) {
       
       width: 280px;
-  
+      height: 180px;
+
       }
 
       //for mobiles
@@ -156,7 +158,7 @@ export const RightContainer = styled.div`
   }
 `;
 
-export const LeftContainer = styled.div`
+export const LeftContainer = styled.div` //UpperContainer in mobile
 
   display: flex;
   width:50%;
@@ -200,7 +202,7 @@ export const LeftContainer = styled.div`
       position: absolute;
       font-size: 30px;
       left: 0;
-    
+      top: 30px;
 
     }
   }
@@ -211,11 +213,12 @@ export const LeftContainer = styled.div`
     flex-direction: column;
     align-items: flex-start;
     margin: 80px;
+    
 
      //for mobiles
      @media(max-width: 600px) {
       
-      margin: 100px 0 0 0;
+      margin: 80px 0 0 0;
       padding: 40px;
 
 

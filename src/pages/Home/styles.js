@@ -20,15 +20,17 @@ export const WelcomeText = styled.span`
 
 export const TextContainer = styled.div`
   display: flex;
-  width:50%;
+  width:100%; //width: 50% com imagem
   position: absolute;
-  align-items: center;
   height: 100%;
+  align-items: center;
   justify-content: center;
+  text-align: center; //Sem Imagem
+  font-size: 20px; //Sem Imagem
 
   strong {
     font-family: 'Quub', sans-serif;
-    font-size:40px;
+    font-size:60px; //40px com imagem
   }
 
   //for ipads
@@ -58,6 +60,7 @@ export const ImageContainer = styled.div`
    width: 50%;
    height: auto;
    top:0;
+   display: none; //Sem imagem
 
    img {
     
