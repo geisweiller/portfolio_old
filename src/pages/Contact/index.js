@@ -1,9 +1,11 @@
+/* eslint-disable class-methods-use-this */
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import emailjs from 'emailjs-com';
 import swal from 'sweetalert';
 
 import { Wrapper, LeftContainer, RightContainer } from './styles';
+import './alertStyle.css';
 
 import Phonelogo from '../../assets/logos/Phone_logo.png';
 import WhatsLogo from '../../assets/logos/Whatsapp_logo.png';
@@ -43,18 +45,18 @@ export default class Contact extends Component {
       email,
     });
 
-    this.resetForm();
+    this.formReset();
   }
 
   sendFeedback = (templateId, data) => {
-    emailjs.send('gmail', templateId, data, 'user_oxZJfR0n7r4pLJ7Ejn5tj').then((res) => {
+    emailjs.send('gmail', templateId, data, 'user_oxZJfR0n7r4pLJ7Ejn5tj').then(() => {
       swal({
         title: 'Mensagem enviada!',
         text: 'Entrarei em contato em breve!',
         icon: 'success',
         button: 'Fechar',
       });
-    }).catch((err) => {
+    }).catch(() => {
       swal({
         title: 'Ops!',
         text: 'Houve um erro, verifique seus dados ou tente novamente mais tarde.',
@@ -62,11 +64,10 @@ export default class Contact extends Component {
         button: 'Fechar',
       });
     });
-    this.resetForm();
   }
 
-  resetForm() {
-    this.setState({ feedback: '', name: '', email: '' });
+  formReset() {
+    document.getElementById('mail').reset();
   }
 
   render() {
@@ -93,14 +94,14 @@ export default class Contact extends Component {
         </LeftContainer>
         <RightContainer>
           <div>
-            <form className="mail" onSubmit={this.handleSubmit}>
+            <form className="mail" id="mail" onSubmit={this.handleSubmit}>
               <span className="id">
                 <input type="text" onChange={this.nameChange} placeholder="Nome" required />
                 <input type="text" onChange={this.emailChange} placeholder="E-mail" required />
               </span>
               <span className="message">
                 <textarea onChange={this.messageChange} placeholder="Sua mensagem" required />
-                <button type="button" onClick={this.handleSubmit}>Envie sua mensagem!</button>
+                <button type="submit">Envie sua mensagem!</button>
               </span>
             </form>
           </div>
