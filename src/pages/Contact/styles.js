@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
   top: 64px;
   bottom:40px;
 
+  
 `;
 
 export const RightContainer = styled.div`
@@ -24,14 +25,27 @@ export const RightContainer = styled.div`
   top:0;
   padding: 40px; 
 
+
   //for mobiles
   @media(max-width: 600px) {
       
       top: 50%;
       width: 100%;
       height: 50%;
-      display: none;
+
     }
+
+
+  
+  form {
+    //for mobiles
+    @media(max-width: 600px) {
+        
+        margin: 60px 0;
+
+    }
+    
+  }  
 
   div {
 
@@ -54,12 +68,20 @@ export const RightContainer = styled.div`
     margin: 20px;
     width: 50%;
 
+    //for ipads
     @media(max-width: 768px) {
       
       width: 120px;
 
-  
       }
+
+    //for mobiles
+    @media(max-width: 600px) {
+        
+        padding: 5px;
+        margin: 5px;
+
+    }
   }
 
   input::placeholder {
@@ -82,11 +104,20 @@ export const RightContainer = styled.div`
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
       margin-top: 20px;
 
+      //for ipads
       @media(max-width: 768px) {
       
       margin-top: 0px;
       bottom: 200px;
   
+      }
+
+      //for mobiles
+      @media(max-width: 600px) {
+        
+        padding: 10px;
+        bottom: 15px;
+
       }
     }
     
@@ -101,10 +132,19 @@ export const RightContainer = styled.div`
       font-family: "Roboto", sans-serif;
       padding: 20px;
 
+      //for ipads
       @media(max-width: 768px) {
       
       width: 280px;
   
+      }
+
+      //for mobiles
+      @media(max-width: 600px) {
+        
+        width: 250px;
+        height: 150px;
+
       }
     }
 
@@ -133,7 +173,7 @@ export const LeftContainer = styled.div`
       
     
       width: 100%;
-      height: 100%;
+      height: 50%;
       top: 0;
       padding: 0;
     }
@@ -175,7 +215,7 @@ export const LeftContainer = styled.div`
      //for mobiles
      @media(max-width: 600px) {
       
-      margin: 20px 0 0 0;
+      margin: 100px 0 0 0;
       padding: 40px;
 
 
