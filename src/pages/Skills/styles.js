@@ -126,6 +126,16 @@ export const Tech = styled.div`
   strong {
     padding: 20px;
     font-size: 20px;
+
+    //for notebooks
+    @media(max-width: 1360px) {
+      
+      font-size: 16px;
+  
+    }
+
+
+
     //for ipads
     @media(max-width: 768px) {
       
@@ -148,6 +158,16 @@ export const Tech = styled.div`
     padding: 20px;
     height: 100%;
     font-size: 15px;
+
+
+
+    //for notebooks
+    @media(max-width: 1360px) {
+      
+      font-size: 12px;
+  
+    }
+
     //for mobiles
     @media(max-width: 600px) {
 

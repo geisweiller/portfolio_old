@@ -29,12 +29,13 @@ export const UpperContainer = styled.div`
 
   @media(max-width: 600px) {
       
-      align-items: center;
-      position: relative;
-      top: 20px;
-      width: 100%;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    width: 100%;
 
-    }
+  }
+
 
 
   span {
@@ -69,6 +70,7 @@ export const UpperContainer = styled.div`
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7)
       }
 
+      //for mobiles
       @media(max-width: 600px) {
       
        margin-top: 320px;
@@ -78,6 +80,12 @@ export const UpperContainer = styled.div`
        align-items: center;
        font-weight: normal;
       }
+
+
+      @media(max-width: 360px) {
+        margin-top: 220px;
+       
+      } 
     }
   }
 
@@ -110,6 +118,13 @@ export const UpperContainer = styled.div`
       font-size: 15px;
       
     }
+
+    @media(max-width: 360px) {
+      
+      padding: 80px 40px;
+      font-size: 12px;
+    
+    }
   }
 
 `;
@@ -125,11 +140,6 @@ export const LowerContainer = styled.div`
   width: 100%;
   justify-content: center;
 
-  @media(max-width: 600px) {
-      
-    
-
-    }
 
   span {
     display:flex;
@@ -181,6 +191,13 @@ export const LowerContainer = styled.div`
       
       font-size: 15px;
       padding: 150px 50px;
+    }
+
+    @media(max-width: 360px) {
+      
+      padding: 150px 40px 100px 40px;
+      font-size: 12px;
+    
     }
     
 
