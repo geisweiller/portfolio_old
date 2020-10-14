@@ -49,7 +49,7 @@ const Skills = () => (
         <div>
           <p>
             Apesar de não ser o foco da Stack de Frontend, possuo conhecimento básico nessa tecnologia.
-            Já desenvolvi algumas aplicações utilizando o NodeJs.
+            Desenvolvi algumas aplicações utilizando o NodeJs.
           </p>
         </div>
       </Tech>
@@ -63,7 +63,7 @@ const Skills = () => (
         <div>
           <p>
             Por ser um desenvolvedor Frontend, me interesso bastante pelos conceitos UI/UX.
-            Já participei de cursos referentes ao assunto, para entender melhor o processo e
+            Participei de cursos referentes ao assunto, para entender melhor o processo e
             entregar resultados mais satisfatórios.
           </p>
         </div>

@@ -29,10 +29,8 @@ export const TextContainer = styled.div`
   font-size: 20px; //Sem Imagem
 
   strong {
-
   
-  
-    font-size:60px; //40px com imagem
+    font-size:40px; //40px com imagem
   }
 
   //for ipads

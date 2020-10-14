@@ -12,7 +12,7 @@ const About = () => (
       </span>
       <span className="about">
         <p>
-          Sou graduando em Ciência da Computação pela UNIFACS e já formado em Engenharia Ambiental, na mesma universidade.
+          Graduando em Ciência da Computação pela UNIFACS e formado em Engenharia Ambiental(2016.2), na mesma universidade.
           Atualmente estou focando em dominar a Stack de Frontend atráves de estudos diários. Procuro cada vez mais me desafiar,
           desenvolvendo diferentes aplicações Web e Mobile, utilizando as mais novas tecnologias relacionadas à Stack. Estou sempre
           disposto a novos desafios que façam enriquecer ainda mais meus conhecimentos.
@@ -26,7 +26,7 @@ const About = () => (
           aprender sobre o meio empresarial bem como planejar projetos, lidar com prazos, liderar e ser liderado. Também estagiei na empresa BRISA,
           na área de testes de softwares embarcados, onde era preciso apresentar resultados de qualidade e em um curto espaço
           de tempo, pois a entrega dos projetos eram diárias. Ambas as experiências me permitiram aprender à trabalhar em sinergia com
-          uma equipe para obter os resultados da melhor forma possível.
+          equipes no âmbito de resolução de problemas da melhor forma possível.
         </p>
       </span>
       <span className="title-experience">
