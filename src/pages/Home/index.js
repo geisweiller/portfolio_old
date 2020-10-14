@@ -12,7 +12,7 @@ const Main = () => (
       <WelcomeText>
         <p>Olá, meu nome é</p>
         {' '}
-        <strong>ARTHUR GEISWEILLER</strong>
+        <strong id="name">ARTHUR GEISWEILLER</strong>
         {' '}
         <p>Bem vindo(a) ao meu portfólio</p>
       </WelcomeText>

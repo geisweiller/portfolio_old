@@ -29,6 +29,8 @@ export const TextContainer = styled.div`
   font-size: 20px; //Sem Imagem
 
   strong {
+
+  
     font-family: 'Quub', sans-serif;
     font-size:60px; //40px com imagem
   }
