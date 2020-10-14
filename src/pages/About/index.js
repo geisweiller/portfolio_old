@@ -23,7 +23,7 @@ const About = () => (
       <span className="experience">
         <p>
           Estagiário de Engenharia Ambiental - Construtora Odebrecht. Tal experiência me permitiu
-          aprender sobre o meio empresarial bem como planejar projetos, lidar com prazos, liderar e ser liderado.
+          aprender sobre o meio empresarial bem como planejar projetos, gerenciamento de tempo, liderar e ser liderado.
           <br />
           <br />
           Estágiario de Testes de Software - BRISA.
