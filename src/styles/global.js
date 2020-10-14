@@ -1,6 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+  @font-face {
+  font-family: 'Quub';
+  src: local('Quub'), url('../assets/fonts/QUUB/QUUB Regular.ttf') format('truetype');
+}
 
 * {
   margin: 0;
