@@ -45,6 +45,7 @@ export const RightContainer = styled.div` //Lower Container in mobile
         margin: 60px 0;
 
     }
+
     
   }  
 
@@ -54,7 +55,7 @@ export const RightContainer = styled.div` //Lower Container in mobile
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 80px;
+  
   }
 
   span {
@@ -62,6 +63,8 @@ export const RightContainer = styled.div` //Lower Container in mobile
     display: flex;
     align-items: center;
     justify-content: center ;
+
+   
   }
 
   input {
@@ -93,6 +96,12 @@ export const RightContainer = styled.div` //Lower Container in mobile
   span.message {
     flex-direction: column;
 
+     //for mobiles 360px
+     @media(max-width: 360px) {
+      
+      margin: 0 0 60px 0;
+     }
+
     button {
       background: #393636;
       color: #FFF;
@@ -118,8 +127,14 @@ export const RightContainer = styled.div` //Lower Container in mobile
         
         padding: 10px;
         bottom: 15px;
-
       }
+
+      //for mobile 360px
+      @media(max-width: 360px) {
+      
+        bottom: 0px;
+      }
+
     }
     
     button:hover{
@@ -225,11 +240,26 @@ export const LeftContainer = styled.div` //UpperContainer in mobile
     }
   }
 
+  img {
+
+    //for mobile
+    @media(max-width: 600px) {
+      
+      width: 40px;
+    }
+  }
+
   span {
     margin: 20px;
     display: flex;
     align-items: center;
     justify-content: center ;
+
+    //for mobile
+    @media(max-width: 600px) {
+      
+      margin: 10px;
+    }
   }
 
   p, a {
@@ -238,10 +268,17 @@ export const LeftContainer = styled.div` //UpperContainer in mobile
     justify-content: center;
     padding: 10px;
 
+    //for ipads
     @media(max-width: 768px) {
       
       text-align: left;
-     }
+    }
+
+    //for mobile
+    @media(max-width: 600px) {
+      
+      font-size: 12px;
+    }
   }
 
   a:hover, a:active {
