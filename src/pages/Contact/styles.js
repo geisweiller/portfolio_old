@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   
 `;
 
-export const RightContainer = styled.div` //Lower Container in mobile
+export const RightContainer = styled.div` //UpperContainer in mobile
 
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@ export const RightContainer = styled.div` //Lower Container in mobile
     //for mobiles
     @media(max-width: 600px) {
       
-      top: 50%;
+     
       width: 100%;
       height: 50%;
       background: #FFF;
@@ -150,7 +150,7 @@ export const RightContainer = styled.div` //Lower Container in mobile
       //for mobile 360px
       @media(max-width: 360px) {
       
-        bottom: 60px;
+        bottom: 30px;
       }
 
     }
@@ -199,7 +199,7 @@ export const RightContainer = styled.div` //Lower Container in mobile
   }
 `;
 
-export const LeftContainer = styled.div` //UpperContainer in mobile
+export const LeftContainer = styled.div` //LowerContainer in mobile
 
   display: flex;
   width:50%;
@@ -217,7 +217,7 @@ export const LeftContainer = styled.div` //UpperContainer in mobile
     
       width: 100%;
       height: 50%;
-      top: 0;
+      bottom: 0;
       padding: 0;
     }
 
