@@ -24,6 +24,7 @@ body {
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  orientation: portrait;
 
   strong#name {
     font-family: 'Audiowide', sans-serif

@@ -55,7 +55,7 @@ export const UpperContainer = styled.div`
     }
  
 
-    a {
+    /* a {
       color: #FFF;
       background: #393636;
       font-weight: bold;
@@ -75,7 +75,7 @@ export const UpperContainer = styled.div`
       
        margin-top: 320px;
        padding: 10px;
-       display: flex;
+       display: none;
        font-size: 10px;
        align-items: center;
        font-weight: normal;
@@ -85,9 +85,9 @@ export const UpperContainer = styled.div`
       @media(max-width: 360px) {
         margin-top: 220px;
        
-      } 
+      }  
     }
-  }
+  }*/
 
     
   
@@ -95,8 +95,8 @@ export const UpperContainer = styled.div`
   strong {
     font-size:60px;
     display: flex;
-    position: absolute;
-    top: 100px;
+    position: relative;
+   
 
     //for mobiles
     @media(max-width: 600px) {

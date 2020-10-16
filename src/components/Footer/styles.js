@@ -22,12 +22,19 @@ export const FooterWrapper = styled.div`
     @media(max-width: 768px){
       font-size: 5px;
       text-align: center;
+      padding-left: 20px
     }
   }
 
   a {
     padding: 0 80px 0 80px;
     color: #707070;
+
+
+    //for ipads
+    @media(max-width: 768px){
+      padding: 40px;
+    }
 
     //for mobiles
     @media(max-width:600px) {

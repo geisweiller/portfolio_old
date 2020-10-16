@@ -86,7 +86,7 @@ export const RightContainer = styled.div` //UpperContainer in mobile
     @media(max-width: 768px) {
       
       width: 120px;
-
+      height: 40px;
       }
 
     //for mobiles
@@ -178,7 +178,7 @@ export const RightContainer = styled.div` //UpperContainer in mobile
       @media(max-width: 600px) {
         
         width: 250px;
-        height: 150px;
+        height: 120px;
 
       }
 
