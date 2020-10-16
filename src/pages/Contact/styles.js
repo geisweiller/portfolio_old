@@ -150,7 +150,14 @@ export const RightContainer = styled.div` //UpperContainer in mobile
       //for mobile 360px
       @media(max-width: 360px) {
       
-        bottom: 30px;
+        bottom: 10px;
+      }
+
+       //height adjusment
+       @media(max-height: 720px) {
+      
+        font-size: 12px;
+        bottom: 10px;
       }
 
     }

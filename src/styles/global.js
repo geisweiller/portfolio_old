@@ -4,6 +4,7 @@ export default createGlobalStyle`
 
  
 
+
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +25,19 @@ body {
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  orientation: portrait;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+  
 
   strong#name {
     font-family: 'Audiowide', sans-serif
