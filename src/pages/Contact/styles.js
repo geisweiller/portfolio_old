@@ -80,7 +80,7 @@ export const RightContainer = styled.div` //UpperContainer in mobile
 
   input {
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     width: 50%;
 
     //for ipads
@@ -88,6 +88,7 @@ export const RightContainer = styled.div` //UpperContainer in mobile
       
       width: 120px;
       height: 40px;
+      margin: 20px;
       }
 
     //for mobiles
