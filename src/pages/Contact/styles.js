@@ -22,7 +22,7 @@ export const RightContainer = styled.div` //UpperContainer in mobile
   bottom: 0;
   width: 50%;
   height: auto;
-  top:0;
+  top:10px;
   padding: 40px; 
   
 
@@ -52,6 +52,7 @@ export const RightContainer = styled.div` //UpperContainer in mobile
     @media(max-width: 600px) {
         
         margin: 60px 0;
+  
 
     }
 
@@ -93,7 +94,8 @@ export const RightContainer = styled.div` //UpperContainer in mobile
     @media(max-width: 600px) {
         
         padding: 5px;
-        margin: 5px;
+        margin: 0 5px;
+        font-size: 12px;
 
     }
 
@@ -150,14 +152,14 @@ export const RightContainer = styled.div` //UpperContainer in mobile
       //for mobile 360px
       @media(max-width: 360px) {
       
-        bottom: 10px;
+        bottom: 15px;
       }
 
        //height adjusment
        @media(max-height: 720px) {
       
         font-size: 12px;
-        bottom: 10px;
+        bottom: 24px;
       }
 
     }
@@ -185,7 +187,7 @@ export const RightContainer = styled.div` //UpperContainer in mobile
       @media(max-width: 600px) {
         
         width: 250px;
-        height: 120px;
+        height: 110px;
 
       }
 
@@ -194,6 +196,7 @@ export const RightContainer = styled.div` //UpperContainer in mobile
         
         width: 240px;
         height: 140px;
+        
 
       }
     }
@@ -202,6 +205,14 @@ export const RightContainer = styled.div` //UpperContainer in mobile
       color:black;
       opacity: 0.3;
       font-size:14px;
+
+      //for mobiles 360px
+      @media(max-width: 360px) {
+        
+        font-size:12px;
+        
+
+      }
     }
   }
 `;
