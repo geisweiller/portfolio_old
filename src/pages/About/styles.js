@@ -86,8 +86,8 @@ export const UpperContainer = styled.div`
         margin-top: 220px;
        
       }  
-    }
-  }*/
+    }*/
+  }
 
     
   
