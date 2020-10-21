@@ -4,8 +4,8 @@ import React from 'react';
 import { Wrapper, TechContainer, Tech } from './styles';
 import logoReact from '../../assets/logos/React_logo.png';
 import logoJs from '../../assets/logos/Js_logo.png';
-import logoNode from '../../assets/logos/Node_logo.png';
 import logoUX from '../../assets/logos/UX_logo.png';
+import logoTS from '../../assets/logos/Typescript_logo.svg';
 
 const Skills = () => (
   <Wrapper>
@@ -41,15 +41,15 @@ const Skills = () => (
       </Tech>
       <Tech>
         <div>
-          <img src={logoNode} alt="React" width="100px" />
+          <img src={logoTS} alt="React" width="100px" />
           <strong>
             NodeJs
           </strong>
         </div>
         <div>
           <p>
-            Apesar de não ser o foco da Stack de Frontend, possuo conhecimento básico nessa tecnologia.
-            Desenvolvi algumas aplicações utilizando o NodeJs.
+            Aprofudando os conhecimentos cada vez mais nessa nova tecnologia chamada Typescript. Desenvolvi algumas aplicações aplicando
+            tipagem sobre o JavaScript, poupando tempo ao encontrar erros e aplicando ajustes antes de rodar o código.
           </p>
         </div>
       </Tech>
