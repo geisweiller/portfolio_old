@@ -12,7 +12,7 @@ const Skills = () => (
     <TechContainer>
       <Tech>
         <div>
-          <img src={logoJs} alt="React" width="100px" />
+          <img src={logoJs} alt="Javascript" width="100px" />
           <strong>
             JavaScript
           </strong>
@@ -41,21 +41,21 @@ const Skills = () => (
       </Tech>
       <Tech>
         <div>
-          <img src={logoTS} alt="React" width="100px" />
+          <img src={logoTS} alt="Typescript" width="100px" />
           <strong>
-            NodeJs
+            Typescript
           </strong>
         </div>
         <div>
           <p>
-            Aprofudando os conhecimentos cada vez mais nessa nova tecnologia chamada Typescript. Desenvolvi algumas aplicações aplicando
+            Aprofudando os conhecimentos cada vez mais nessa nova tecnologia. Desenvolvi algumas aplicações aplicando
             tipagem sobre o JavaScript, poupando tempo ao encontrar erros e aplicando ajustes antes de rodar o código.
           </p>
         </div>
       </Tech>
       <Tech>
         <div>
-          <img src={logoUX} alt="React" width="100px" />
+          <img src={logoUX} alt="UX" width="100px" />
           <strong>
             UI/UX
           </strong>
