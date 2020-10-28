@@ -22,7 +22,7 @@ export const RightContainer = styled.div` //UpperContainer in mobile
   bottom: 0;
   width: 50%;
   height: auto;
-  top:10px;
+  top: ${(props) => (props.theme === true ? '0' : '10px')};
   padding: 40px; 
   
 

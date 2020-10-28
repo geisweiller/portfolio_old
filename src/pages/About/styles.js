@@ -22,7 +22,7 @@ export const UpperContainer = styled.div`
   display: flex;
   height:50%;
   position: absolute;
-  top: 10px;
+  top: ${(props) => (props.theme === true ? '0' : '10px')};
   align-items: center;
   width: 100%;
   justify-content: space-between;
@@ -32,7 +32,7 @@ export const UpperContainer = styled.div`
       
     align-items: center;
     position: relative;
-    top: 10px;
+    top: ${(props) => (props.theme === true ? '0' : '10px')};
     width: 100%;
 
   }

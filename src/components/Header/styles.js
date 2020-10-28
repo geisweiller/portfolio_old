@@ -8,8 +8,8 @@ export const HeaderWrapper = styled.div`
   display:flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 2px 4px 10px;
-  
+  box-shadow: ${(props) => (props.theme === true ? '' : '2px 4px 10px')};
+  border-bottom: ${(props) => (props.theme === true ? '1px solid #F5F5F5' : '')};
   position: absolute;
   top: 0;
 
