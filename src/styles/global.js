@@ -18,8 +18,8 @@ html, body, #root, #root>.app {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #F5F5F5;
-  color:#707070;
+  background: ${(props) => (props.theme === true ? '#202020' : '#F5F5F5')};
+  color: ${(props) => (props.theme === true ? '#F5F5F5' : '#707070')};
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -45,12 +45,9 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #363636;
+  color: ${(props) => (props.theme === true ? '#F5F5F5' : '#363636')};
 }
 
-a:visited {
-    color: #363636;
-  }
 
 button {
   cursor: pointer;

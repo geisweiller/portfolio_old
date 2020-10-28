@@ -7,9 +7,12 @@ export const Wrapper = styled.div`
   position: absolute;
   top: 64px;
   bottom:40px;
+
 `;
 
 export const WelcomeText = styled.span`
+
+  color: ${(props) => (props.theme === true ? '#F5F5F5' : '')};
    //for mobiles 
    @media(max-width: 600px){
 

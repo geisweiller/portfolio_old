@@ -1,17 +1,21 @@
 import React from 'react';
-import Routes from './routes';
 
+import { useSelector } from 'react-redux';
+import Routes from './routes';
 import GlobalStyle from './styles/global';
 
 import Footer from './components/Footer';
 
-const App = () => (
+export default function App() {
+  const active = useSelector((state) => state.darkMode);
 
-  <div className="app">
-    <GlobalStyle />
-    <Routes />
-    <Footer />
-  </div>
-);
+  return (
 
-export default App;
+    <div className="app">
+      <GlobalStyle theme={active} />
+      <Routes />
+      <Footer />
+    </div>
+
+  );
+}

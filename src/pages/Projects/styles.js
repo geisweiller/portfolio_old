@@ -1,17 +1,7 @@
-import styled, { keyframes, css } from 'styled-components';
+import styled from 'styled-components';
 
-const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to{
-    transform: rotate(360deg);
-  }
-`;
+export const Wrapper = styled.div`
 
-export const Wrapper = styled.div.attrs((props) => ({
-  disabled: props.loading,
-}))` 
   display: flex;
   justify-content: center;
   width: 100%;
@@ -20,24 +10,14 @@ export const Wrapper = styled.div.attrs((props) => ({
   bottom:40px;
   height: 100%;
   align-items: center;
-
-  &[disabled] {
-    cursor: not-allowed;
-    opacity: 0.6;
-  }
-  ${(props) => props.loading
-    && css`
-      svg {
-        animation: ${rotate} 2s linear infinite;
-      }
-      `}
+  
 
   //for mobiles
   @media(max-width: 600px) {
 
-      height: 100%;
+    height: 100%;
 
-    }
+  }
 
 `;
 
@@ -62,6 +42,7 @@ export const Project = styled.div`
   padding: 20px;
   flex-direction: column;
   width: 100%;
+  
 
    //for mobiles
   @media(max-width: 600px) {
@@ -74,7 +55,7 @@ export const Project = styled.div`
   strong {
     padding: 10px 20px;
     font-size: 20px;
-
+   
 
     //for ipads
     @media(max-width: 768px) {
@@ -159,4 +140,38 @@ export const Project = styled.div`
 
 
   
+`;
+
+export const StyledSpinner = styled.svg`
+  animation: rotate 2s linear infinite;
+  margin: -25px 0 0 -25px;
+  width: 100px;
+  height: 100px;
+  
+  
+  & .path {
+    stroke: ${(props) => (props.theme === true ? '#F5F5F5' : '#707070')};
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 150;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -35;
+    }
+    100% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -124;
+    }
+  }
 `;

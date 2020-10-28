@@ -4,7 +4,7 @@ export const FooterWrapper = styled.div`
 
   width: 100%;
   height: 40px;
-  background: #F5F5F5;
+  background: ${(props) => (props.theme === true ? '#202020' : '#F5F5F5')};
   display: flex;
   align-items: center;
   position: fixed;
@@ -13,22 +13,28 @@ export const FooterWrapper = styled.div`
   justify-content: space-between;
   
 
+  div.switch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
 
   p {
-    padding-left:20px;
+    
     font-size: 10px;
 
     //for ipads
     @media(max-width: 768px){
       font-size: 5px;
       text-align: center;
-      padding-left: 20px
+      
     }
   }
 
   a {
     padding: 0 80px 0 80px;
-    color: #707070;
+    color: ${(props) => (props.theme === true ? '#F5F5F5' : '#707070')};
 
 
     //for ipads

@@ -26,6 +26,7 @@ export const UpperContainer = styled.div`
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  background: ${(props) => (props.theme === true ? '#2B2B2B' : '')};
 
   @media(max-width: 600px) {
       
@@ -111,6 +112,7 @@ export const UpperContainer = styled.div`
   p {
     padding: 50px;
     text-align: justify;
+   
 
     @media(max-width: 600px) {
       
@@ -140,6 +142,7 @@ export const LowerContainer = styled.div`
   width: 100%;
   justify-content: center;
 
+  
 
   span {
     display:flex;
@@ -165,7 +168,8 @@ export const LowerContainer = styled.div`
     display: flex;
     position: absolute;
     bottom: 150px;
-    
+    color: ${(props) => (props.theme === true ? '#F5F5F5' : '')};
+
     //for ipads
     @media(max-width: 768px){
       margin-right:30px;
@@ -185,7 +189,8 @@ export const LowerContainer = styled.div`
   p {
     padding: 50px;
     text-align: justify;
-    
+    color: ${(props) => (props.theme === true ? '#F5F5F5' : '')};
+
     //for mobiles
     @media(max-width: 600px) {
       

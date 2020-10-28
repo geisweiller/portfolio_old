@@ -32,7 +32,7 @@ export const RightContainer = styled.div` //UpperContainer in mobile
      
       width: 100%;
       height: 50%;
-      background: #FFF;
+      background: ${(props) => (props.theme === true ? '#2B2B2B' : '#FFF')};
      
     }
 
@@ -344,7 +344,7 @@ export const LeftContainer = styled.div` //LowerContainer in mobile
   }
 
   a:visited {
-    color: #363636;
+    color: ${(props) => (props.theme === true ? '#F5F5F5' : '#363636')};;
   }
 
   p {
