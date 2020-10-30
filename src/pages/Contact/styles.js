@@ -41,7 +41,7 @@ export const RightContainer = styled.div` //UpperContainer in mobile
       
       
       height: 60%;
-      background: #FFF;
+      background: ${(props) => (props.theme === true ? '#2B2B2B' : '#FFF')};
  
     }
 
@@ -162,6 +162,14 @@ export const RightContainer = styled.div` //UpperContainer in mobile
         font-size: 12px;
         bottom: 24px;
       }
+
+      //height adjusment
+      @media(max-height: 667px) {
+      
+        font-size: 12px;
+        bottom: 15px;
+     } 
+
 
     }
     

@@ -12,8 +12,6 @@ export const Wrapper = styled.div`
       
       height: 100%;
     }
-
-
 `;
 
 export const UpperContainer = styled.div`
@@ -36,6 +34,11 @@ export const UpperContainer = styled.div`
     width: 100%;
 
   }
+  //height adjusment
+  @media(max-height: 667px) {
+      
+     height: 55%;
+    }
 
 
 
